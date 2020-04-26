@@ -1,0 +1,2 @@
+var app = require('../app');
+var debug = require('debug')('chat-app:server');

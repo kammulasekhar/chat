@@ -1,0 +1,14 @@
+<div class="card" scroll-bar>
+    <div class="card-body">
+        <h4 class="card-title"><a ui-sref="dashboard"><i class="ti-arrow-left"></i></a></h4>
+    </div>
+    <div class="comment-widgets scrollable" style="max-height: calc(100vh - 134px);">
+        <div class="d-flex no-block align-items-center comment-row p-10" ng-repeat="contact in contacts">
+            <img ng-src="../images/profile-images/1.jpg" width="40" alt="user" class="rounded-circle">
+            <div class="comment-text m-l-10">
+                <h5 class="m-b-0">{{contact.name}}</h5> 
+                <span class="mail-desc">{{contact.email}}</span> 
+            </div>
+        </div>
+    </div>
+</div>

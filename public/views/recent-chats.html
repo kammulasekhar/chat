@@ -1,0 +1,17 @@
+<div class="card" scroll-bar>
+    <div class="card-body">
+        <h4 class="card-title ml-auto text-right"><a ui-sref="dashboard.contacts"><i class="ti-plus"></i></a></h4>
+    </div>
+    <div class="comment-widgets scrollable" style="max-height: calc(100vh - 134px);">
+        <div class="d-flex flex-row comment-row m-t-0" ng-repeat="contact in contacts" ng-click="selectedContactFun(contact)">
+            <div class="p-2"><img src="../images/profile-images/1.jpg" alt="user" width="50" class="rounded-circle"></div>
+            <div class="comment-text w-100">
+                <h6 class="font-medium">{{contact.name}}</h6>
+                <span class="m-b-15 d-block">Lorem Ipsum text</span>
+                <div class="comment-footer">
+                    <span class="text-muted float-right">April 14, 2016</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
